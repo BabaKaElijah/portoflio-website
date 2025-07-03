@@ -118,9 +118,10 @@ a:visited {
 
 .btn-alt {
   background-color: white;
-  color: #4e4376;
-  border: 2px solid white;
+  color: #4e4376 !important;
+  border: 2px solid #4e4376;
 }
+
 
 .btn-alt:hover {
   background-color: #4e4376;

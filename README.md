@@ -26,9 +26,6 @@ This is my personal portfolio website, built to showcase my background in mathem
 
 ---
 
-### 📄 CV Download
-A downloadable copy of my resume is available on the site.
-
 ---
 
 ### 📬 Contact

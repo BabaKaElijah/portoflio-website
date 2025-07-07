@@ -96,24 +96,23 @@ a:visited {
   margin: 1rem 0;
 }
 
-.buttons .btn {
+.btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin: 0.5rem;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-}
-
-.btn {
-  background-color: white;
+  background-color: #4e4376;
   color: #4e4376;
-  border: 2px solid white;
+  border: 2px solid #4e4376;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 .btn:hover {
   background-color: transparent;
   color: white;
+  border-color: white;
 }
 
 .btn-alt {
@@ -121,7 +120,6 @@ a:visited {
   color: #4e4376 !important;
   border: 2px solid #4e4376;
 }
-
 
 .btn-alt:hover {
   background-color: #4e4376;
@@ -326,4 +324,7 @@ footer a:hover {
   .menu-toggle {
     display: none !important;
   }
+}
+a.btn {
+  color: white !important;
 }

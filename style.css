@@ -2213,3 +2213,99 @@ a.btn {
   }
 }
 
+
+@media (max-width: 900px) {
+  /* Global container tightening for mobile */
+  .container {
+    padding: 2rem 1.1rem;
+  }
+
+  .hero {
+    padding: 5rem 1.1rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 6vw, 2.8rem);
+  }
+
+  .quote {
+    margin: 0.8rem auto 1.2rem;
+  }
+
+  /* Projects page */
+  .editorial-case {
+    grid-template-columns: 1fr;
+    padding: 1.8rem;
+  }
+
+  .project-hero .buttons {
+    gap: 0.5rem;
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .case-tags {
+    gap: 0.4rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header {
+    align-items: center;
+  }
+
+  /* Education page */
+  .edu-row {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-node {
+    padding-left: 1.4rem;
+  }
+
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Experience page */
+  .exp-card {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+  }
+
+  .exp-left {
+    padding-right: 0;
+  }
+
+  .exp-tags {
+    gap: 0.6rem;
+  }
+
+  /* Contact page */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 1.3rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-span {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Skills page */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

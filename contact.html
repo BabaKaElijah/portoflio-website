@@ -96,9 +96,7 @@
 
     <div class="contact-form reveal">
       <h2><i class="fas fa-paper-plane"></i> Send a Message</h2>
-      <form class="form-grid" action="https://formspree.io/f/your_form_id" method="POST">
-        <input type="hidden" name="_subject" value="New message from portfolio site" />
-        <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" />
+      <form class="form-grid" id="contact-form" onsubmit="return false" novalidate>
         <div class="form-field">
           <label for="name">Full Name</label>
           <input id="name" name="name" type="text" placeholder="Your name" required />
@@ -121,6 +119,7 @@
         </div>
         <div class="form-field form-span">
           <button type="submit" class="btn btn-send"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-note" id="form-status" aria-live="polite"></p>
         </div>
       </form>
     </div>
@@ -141,8 +140,51 @@
     });
 
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    if (typeof emailjs === 'undefined') {
+      const statusEl = document.getElementById('form-status');
+      if (statusEl) {
+        statusEl.textContent = 'Email service failed to load. Please refresh and try again.';
+      }
+    } else {
+      emailjs.init('pwthnv3Gun6zF86NH');
+    }
+
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (typeof emailjs === 'undefined') {
+        statusEl.textContent = 'Email service failed to load. Please refresh and try again.';
+        return;
+      }
+      statusEl.textContent = 'Sending...';
+
+      const templateParams = {
+        name: form.name.value,
+        email: form.email.value,
+        from_name: form.name.value,
+        reply_to: form.email.value,
+        company: form.company.value,
+        role: form.role.value,
+        message: form.message.value,
+      };
+
+      emailjs
+        .send('service_0ptc8gw', 'template_7tawm8o', templateParams)
+        .then(() => {
+          statusEl.textContent = 'Message sent successfully. Thank you!';
+          form.reset();
+        })
+        .catch((error) => {
+          const details = error && error.text ? ` (${error.text})` : '';
+          statusEl.textContent = `Something went wrong. Please try again.${details}`;
+          console.error('EmailJS error:', error);
+        });
+    });
+  </script>
   <script src="animations.js"></script>
 </body>
 </html>
-
-

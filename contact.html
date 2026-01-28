@@ -96,7 +96,7 @@
 
     <div class="contact-form reveal">
       <h2><i class="fas fa-paper-plane"></i> Send a Message</h2>
-      <form class="form-grid" id="contact-form">
+      <form class="form-grid" id="contact-form" onsubmit="return false" novalidate>
         <div class="form-field">
           <label for="name">Full Name</label>
           <input id="name" name="name" type="text" placeholder="Your name" required />
@@ -142,15 +142,24 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    (function () {
+    if (typeof emailjs === 'undefined') {
+      const statusEl = document.getElementById('form-status');
+      if (statusEl) {
+        statusEl.textContent = 'Email service failed to load. Please refresh and try again.';
+      }
+    } else {
       emailjs.init('pwthnv3Gun6zF86NH');
-    })();
+    }
 
     const form = document.getElementById('contact-form');
     const statusEl = document.getElementById('form-status');
 
     form.addEventListener('submit', (event) => {
       event.preventDefault();
+      if (typeof emailjs === 'undefined') {
+        statusEl.textContent = 'Email service failed to load. Please refresh and try again.';
+        return;
+      }
       statusEl.textContent = 'Sending...';
 
       const templateParams = {
@@ -170,7 +179,8 @@
           form.reset();
         })
         .catch((error) => {
-          statusEl.textContent = 'Something went wrong. Please try again.';
+          const details = error && error.text ? ` (${error.text})` : '';
+          statusEl.textContent = `Something went wrong. Please try again.${details}`;
           console.error('EmailJS error:', error);
         });
     });

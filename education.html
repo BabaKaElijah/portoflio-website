@@ -1,11 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic background of Ellias Sithole, including an MSc in Pure Mathematics from the University of the Witwatersrand." />
+  <link rel="canonical" href="https://babakaelijah.github.io/portoflio-website/education.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ellias Sithole" />
+  <meta property="og:title" content="Ellias Sithole | Education" />
+  <meta property="og:description" content="Academic background of Ellias Sithole, including an MSc in Pure Mathematics from the University of the Witwatersrand." />
+  <meta property="og:url" content="https://babakaelijah.github.io/portoflio-website/education.html" />
+  <meta property="og:image" content="https://babakaelijah.github.io/portoflio-website/assets/social-preview.png" />
+  <meta property="og:image:alt" content="Ellias Sithole, Senior Data Analyst - Making complex data useful" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <title>Ellias Sithole | Education</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="interior.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,7 +32,8 @@
     rel="stylesheet"
   />
 </head>
-<body class="education-page">
+<body class="inner-page education-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="ambient" aria-hidden="true">
     <span class="blob b1"></span>
     <span class="blob b2"></span>
@@ -25,11 +41,10 @@
     <span class="grid"></span>
   </div>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
     <div class="container nav-container">
-      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
-        <i class="fas fa-bars"></i>
-      </div>
+      <a class="site-brand" href="index.html" aria-label="Ellias Sithole, home"><span class="brand-mark">ES</span><span>Ellias Sithole</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fas fa-bars" aria-hidden="true"></i></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">About</a></li>
         <li><a href="experience.html">Experience</a></li>
@@ -42,13 +57,19 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <h1 class="hero-reveal-1">Education</h1>
-      <p class="subtitle hero-reveal-2">Academic foundation in mathematics and research</p>
-      <div class="buttons hero-reveal-3">
-        <a href="skills.html" class="btn">View Skills</a>
-        <a href="index.html" class="btn">Back to About</a>
+  <main id="main-content">
+  <header class="inner-hero">
+    <div class="container inner-hero-grid">
+      <div class="inner-hero-copy">
+        <p class="eyebrow hero-reveal-1"><span class="eyebrow-line"></span> Education / 03</p>
+        <h1 class="hero-reveal-2">A foundation in <em>rigorous thinking.</em></h1>
+        <p class="inner-lede hero-reveal-2">Mathematics taught me how to frame hard problems, test ideas carefully, and explain results clearly.</p>
+        <div class="home-actions hero-reveal-3"><a class="primary-action" href="#education">Explore education <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a><a class="secondary-action" href="assets/Msc Final Dissertataion E Sithole 1239279 (1).pdf" download>Read dissertation <i class="fa-solid fa-download" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="inner-feature hero-reveal-3">
+        <div class="inner-feature-top"><span class="signal-dot"></span> ACADEMIC FOCUS <span>01 / 03</span></div>
+        <div class="inner-feature-content"><span class="inner-feature-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span><p class="inner-feature-label">University of the Witwatersrand</p><h2>MSc in Pure Mathematics</h2><p>Research in graph theory and the triangle graph of a graph.</p></div>
+        <div class="inner-feature-tags"><span>Graph theory</span><span>Research</span><span>2021</span></div>
       </div>
     </div>
   </header>
@@ -117,7 +138,7 @@
           <div class="edu-dot"></div>
           <div class="edu-node-body">
             <p class="edu-level">Undergrad</p>
-            <h3><i class="fa-solid fa-graduation-cap"></i> BSc in Computational &amp; Applied Mathematics</h3>
+            <h3><i class="fa-solid fa-graduation-cap"></i> BSc in Computational and Applied Mathematics and Mathematics</h3>
             <p class="edu-meta">University of the Witwatersrand &bull; 2015-2018</p>
           </div>
         </article>
@@ -149,24 +170,20 @@
         <h2>Want the full paper?</h2>
         <p>My MSc dissertation is available for download above.</p>
       </div>
+      <div class="cta-actions"><a class="primary-action" href="assets/Msc Final Dissertataion E Sithole 1239279 (1).pdf" download>Download dissertation <i class="fa-solid fa-download" aria-hidden="true"></i></a></div>
     </div>
   </section>
 
+  </main>
+
   <footer>
-    <p>Email: <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a> | Phone: 079 428 6590 / 081 606 9979</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/elias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">Profile</a> | GitHub: <a href="https://github.com/BabaKaElijah" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
+    <p>Email: <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a> | Phone: <a href="tel:+27816069979">081 606 9979</a> / <a href="tel:+27616011132">061 601 1132</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ellias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">Profile</a> | GitHub: <a href="https://github.com/BabaKaElijah" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
     <p>&copy; 2026 Ellias Sithole</p>
   </footer>
 
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
 
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-
-  </script>
+  <script src="site.js"></script>
   <script src="animations.js"></script>
 </body>
 </html>

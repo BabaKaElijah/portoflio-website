@@ -1,11 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get in touch with Ellias Sithole about data analysis, business intelligence, and applied machine learning opportunities." />
+  <link rel="canonical" href="https://babakaelijah.github.io/portoflio-website/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ellias Sithole" />
+  <meta property="og:title" content="Ellias Sithole | Contact" />
+  <meta property="og:description" content="Get in touch with Ellias Sithole about data analysis, business intelligence, and applied machine learning opportunities." />
+  <meta property="og:url" content="https://babakaelijah.github.io/portoflio-website/contact.html" />
+  <meta property="og:image" content="https://babakaelijah.github.io/portoflio-website/assets/social-preview.png" />
+  <meta property="og:image:alt" content="Ellias Sithole, Senior Data Analyst - Making complex data useful" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <title>Ellias Sithole | Contact</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="interior.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,7 +32,8 @@
     rel="stylesheet"
   />
 </head>
-<body>
+<body class="inner-page contact-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="ambient" aria-hidden="true">
     <span class="blob b1"></span>
     <span class="blob b2"></span>
@@ -25,11 +41,10 @@
     <span class="grid"></span>
   </div>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
     <div class="container nav-container">
-      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
-        <i class="fas fa-bars"></i>
-      </div>
+      <a class="site-brand" href="index.html" aria-label="Ellias Sithole, home"><span class="brand-mark">ES</span><span>Ellias Sithole</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fas fa-bars" aria-hidden="true"></i></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">About</a></li>
         <li><a href="experience.html">Experience</a></li>
@@ -42,14 +57,19 @@
     </div>
   </nav>
 
-  <header class="hero contact-hero">
-    <div class="container">
-      <h1 class="hero-reveal-1">Let's Connect</h1>
-      <p class="subtitle hero-reveal-2">Open to data, analytics, and ML engineering opportunities.</p>
-      <p class="quote hero-reveal-2">Share a quick note about your role or project and I’ll get back to you.</p>
-      <div class="buttons hero-reveal-3">
-        <a href="index.html" class="btn">Back to About</a>
-        <a href="projects.html" class="btn">View Projects</a>
+  <main id="main-content">
+  <header class="inner-hero">
+    <div class="container inner-hero-grid">
+      <div class="inner-hero-copy">
+        <p class="eyebrow hero-reveal-1"><span class="eyebrow-line"></span> Get in touch / 06</p>
+        <h1 class="hero-reveal-2">Let's make data <em>useful together.</em></h1>
+        <p class="inner-lede hero-reveal-2">Have a role, project, or idea in mind? Share a note and I’ll get back to you.</p>
+        <div class="home-actions hero-reveal-3"><a class="primary-action" href="mailto:tsebeelias@gmail.com">Email me <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="secondary-action" href="#contact">Contact options <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="inner-feature hero-reveal-3">
+        <div class="inner-feature-top"><span class="signal-dot"></span> OPEN TO CONVERSATION <span>01 / 01</span></div>
+        <div class="inner-feature-content"><span class="inner-feature-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></span><p class="inner-feature-label">The fastest way to reach me</p><h2>Let's talk about what's next.</h2><a class="inner-feature-email" href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+        <div class="inner-feature-tags"><span>Analytics roles</span><span>Collaborations</span><span>Projects</span></div>
       </div>
     </div>
   </header>
@@ -70,14 +90,14 @@
           <i class="fa-solid fa-phone"></i>
           <div>
             <span>Phone</span>
-            <p>079 428 6590 / 081 606 9979</p>
+            <p><a href="tel:+27816069979">081 606 9979</a> / <a href="tel:+27616011132">061 601 1132</a></p>
           </div>
         </div>
         <div class="contact-card">
           <i class="fa-brands fa-linkedin"></i>
           <div>
             <span>LinkedIn</span>
-            <a href="https://linkedin.com/in/elias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">linkedin.com/in/elias-elijah-sithole-4850b0139</a>
+            <a href="https://www.linkedin.com/in/ellias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ellias-elijah-sithole-4850b0139</a>
           </div>
         </div>
         <div class="contact-card">
@@ -96,14 +116,15 @@
 
     <div class="contact-form reveal">
       <h2><i class="fas fa-paper-plane"></i> Send a Message</h2>
-      <form class="form-grid" id="contact-form" onsubmit="return false" novalidate>
+      <p class="form-direct-email">Prefer email? Write directly to <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a>.</p>
+      <form class="form-grid" id="contact-form">
         <div class="form-field">
           <label for="name">Full Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" minlength="2" required />
         </div>
         <div class="form-field">
           <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" placeholder="you@email.com" required />
+          <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
         </div>
         <div class="form-field">
           <label for="company">Company / Organization</label>
@@ -115,76 +136,28 @@
         </div>
         <div class="form-field form-span">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Share the details of your role or project..." required></textarea>
+          <textarea id="message" name="message" rows="5" minlength="10" placeholder="Share the details of your role or project..." required></textarea>
         </div>
         <div class="form-field form-span">
           <button type="submit" class="btn btn-send"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-          <p class="form-note" id="form-status" aria-live="polite"></p>
+          <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
         </div>
       </form>
     </div>
   </section>
 
+  </main>
+
   <footer>
-    <p>Email: <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a> | Phone: 079 428 6590 / 081 606 9979</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/elias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">Profile</a> | GitHub: <a href="https://github.com/BabaKaElijah" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
+    <p>Email: <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a> | Phone: <a href="tel:+27816069979">081 606 9979</a> / <a href="tel:+27616011132">061 601 1132</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ellias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">Profile</a> | GitHub: <a href="https://github.com/BabaKaElijah" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
     <p>&copy; 2026 Ellias Sithole</p>
   </footer>
 
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
 
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    if (typeof emailjs === 'undefined') {
-      const statusEl = document.getElementById('form-status');
-      if (statusEl) {
-        statusEl.textContent = 'Email service failed to load. Please refresh and try again.';
-      }
-    } else {
-      emailjs.init('pwthnv3Gun6zF86NH');
-    }
-
-    const form = document.getElementById('contact-form');
-    const statusEl = document.getElementById('form-status');
-
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (typeof emailjs === 'undefined') {
-        statusEl.textContent = 'Email service failed to load. Please refresh and try again.';
-        return;
-      }
-      statusEl.textContent = 'Sending...';
-
-      const templateParams = {
-        name: form.name.value,
-        email: form.email.value,
-        from_name: form.name.value,
-        reply_to: form.email.value,
-        company: form.company.value,
-        role: form.role.value,
-        message: form.message.value,
-      };
-
-      emailjs
-        .send('service_0ptc8gw', 'template_7tawm8o', templateParams)
-        .then(() => {
-          statusEl.textContent = 'Message sent successfully. Thank you!';
-          form.reset();
-        })
-        .catch((error) => {
-          const details = error && error.text ? ` (${error.text})` : '';
-          statusEl.textContent = `Something went wrong. Please try again.${details}`;
-          console.error('EmailJS error:', error);
-        });
-    });
-  </script>
+  <script src="contact.js"></script>
+  <script src="site.js"></script>
   <script src="animations.js"></script>
 </body>
 </html>

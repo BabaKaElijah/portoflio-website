@@ -139,10 +139,6 @@ footer {
   color: var(--accent);
 }
 
-a:visited {
-  color: inherit !important;
-}
-
 /* Hero */
 .hero {
   position: relative;

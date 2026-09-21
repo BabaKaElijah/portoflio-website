@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fbfcf9"/>
+      <stop offset="1" stop-color="#e8f2ef"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1a4650"/>
+      <stop offset="1" stop-color="#102831"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#paper)"/>
+  <circle cx="1118" cy="18" r="290" fill="none" stroke="#b7d1cd" stroke-width="2" opacity=".7"/>
+  <circle cx="1060" cy="55" r="214" fill="none" stroke="#b7d1cd" stroke-width="2" opacity=".55"/>
+  <rect x="56" y="56" width="68" height="68" rx="18" fill="#102d38"/>
+  <text x="90" y="101" text-anchor="middle" fill="white" font-family="Arial,sans-serif" font-size="25" font-weight="700">ES</text>
+  <text x="147" y="101" fill="#142531" font-family="Arial,sans-serif" font-size="25" font-weight="700">Ellias Sithole</text>
+  <rect x="56" y="178" width="31" height="3" fill="#bc5435"/>
+  <text x="104" y="184" fill="#bc5435" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="4">SENIOR DATA ANALYST</text>
+  <text x="53" y="283" fill="#142531" font-family="Georgia,serif" font-size="67">Making complex</text>
+  <text x="53" y="365" fill="#142531" font-family="Georgia,serif" font-size="67">data <tspan fill="#d96542">useful.</tspan></text>
+  <text x="57" y="434" fill="#4d6067" font-family="Arial,sans-serif" font-size="24">Analytics · Business intelligence · Applied ML</text>
+  <rect x="56" y="532" width="360" height="47" rx="23" fill="#e3eeea"/>
+  <text x="77" y="563" fill="#28535e" font-family="Arial,sans-serif" font-size="18" font-weight="700">babakaelijah.github.io/portoflio-website</text>
+  <rect x="779" y="165" width="354" height="338" rx="28" fill="url(#card)"/>
+  <circle cx="838" cy="220" r="6" fill="#95d2ae"/>
+  <text x="858" y="226" fill="#b6d7d6" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">CURRENT FOCUS</text>
+  <path d="M823 371h58l32-48 34 22 31-60 44 24 47-77" fill="none" stroke="#f4a585" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1069" cy="232" r="10" fill="#f4a585"/>
+  <text x="823" y="447" fill="white" font-family="Georgia,serif" font-size="27">From insight to action.</text>
+</svg>

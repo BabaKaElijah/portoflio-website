@@ -1,11 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The analytics, business intelligence, programming, and machine learning skills of Ellias Sithole." />
+  <link rel="canonical" href="https://babakaelijah.github.io/portoflio-website/skills.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ellias Sithole" />
+  <meta property="og:title" content="Ellias Sithole | Skills" />
+  <meta property="og:description" content="The analytics, business intelligence, programming, and machine learning skills of Ellias Sithole." />
+  <meta property="og:url" content="https://babakaelijah.github.io/portoflio-website/skills.html" />
+  <meta property="og:image" content="https://babakaelijah.github.io/portoflio-website/assets/social-preview.png" />
+  <meta property="og:image:alt" content="Ellias Sithole, Senior Data Analyst - Making complex data useful" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <title>Ellias Sithole | Skills</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="interior.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,7 +32,8 @@
     rel="stylesheet"
   />
 </head>
-<body>
+<body class="inner-page skills-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="ambient" aria-hidden="true">
     <span class="blob b1"></span>
     <span class="blob b2"></span>
@@ -25,11 +41,10 @@
     <span class="grid"></span>
   </div>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
     <div class="container nav-container">
-      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" role="button" tabindex="0">
-        <i class="fas fa-bars"></i>
-      </div>
+      <a class="site-brand" href="index.html" aria-label="Ellias Sithole, home"><span class="brand-mark">ES</span><span>Ellias Sithole</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><i class="fas fa-bars" aria-hidden="true"></i></button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">About</a></li>
         <li><a href="experience.html">Experience</a></li>
@@ -42,13 +57,19 @@
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="container">
-      <h1 class="hero-reveal-1">Skills</h1>
-      <p class="subtitle hero-reveal-2">Tools, frameworks, and professional strengths</p>
-      <div class="buttons hero-reveal-3">
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="index.html" class="btn">Back to About</a>
+  <main id="main-content">
+  <header class="inner-hero">
+    <div class="container inner-hero-grid">
+      <div class="inner-hero-copy">
+        <p class="eyebrow hero-reveal-1"><span class="eyebrow-line"></span> Capabilities / 04</p>
+        <h1 class="hero-reveal-2">The tools behind <em>the work.</em></h1>
+        <p class="inner-lede hero-reveal-2">A practical mix of analytics, business intelligence, programming, and communication skills.</p>
+        <div class="home-actions hero-reveal-3"><a class="primary-action" href="#skills">Explore skills <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a><a class="secondary-action" href="projects.html">See them in action <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="inner-feature hero-reveal-3">
+        <div class="inner-feature-top"><span class="signal-dot"></span> CORE TOOLKIT <span>01 / 06</span></div>
+        <div class="inner-feature-content"><span class="inner-feature-icon"><i class="fa-solid fa-code-branch" aria-hidden="true"></i></span><p class="inner-feature-label">Analysis to delivery</p><h2>Python. SQL. Power BI.</h2><p>Supported by Excel, Power Query, FastAPI, and modern ML tooling.</p></div>
+        <div class="inner-feature-tags"><span>Analyze</span><span>Build</span><span>Communicate</span></div>
       </div>
     </div>
   </header>
@@ -65,7 +86,7 @@
       <div class="skill-category reveal-item card-reveal">
         <h3><i class="fa-solid fa-chart-column"></i> BI and Analytics</h3>
         <div class="skill-list">
-          <span>Power BI</span><span>Power Apps</span><span>Excel</span><span>SSMS</span>
+          <span>Power BI</span><span>Power Apps</span><span>Excel</span><span>Power Query</span><span>SSMS</span>
         </div>
       </div>
       <div class="skill-category reveal-item card-reveal">
@@ -87,15 +108,14 @@
       <div class="skill-category reveal-item card-reveal">
         <h3><i class="fa-solid fa-briefcase"></i> Business and Analytical Methods</h3>
         <div class="skill-list">
-          <span>Portfolio Optimization</span><span>Risk and Return Analysis</span><span>Volatility Measurement</span>
+          <span>Municipal Revenue Analytics</span><span>Data Quality</span><span>Operational Reporting</span><span>Pricing Analysis</span>
         </div>
       </div>
       <div class="skill-category reveal-item card-reveal">
         <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
         <div class="skill-list">
-          <span>Data Analysis</span><span>Creativity & Innovation</span><span>Quantitative Research</span>
-          <span>Adaptability & Flexibility Management</span><span>Customer Engagement</span><span>Problem Solving</span>
-          <span>Collaboration</span><span>Work Ethic & Dependability</span>
+          <span>Stakeholder Communication</span><span>Quantitative Research</span><span>Problem Solving</span>
+          <span>Cross-functional Collaboration</span><span>Clear Reporting</span><span>Adaptability</span>
         </div>
       </div>
     </div>
@@ -107,24 +127,20 @@
         <h2>Ready to contribute</h2>
         <p>Looking for a data and analytics role where I can drive impact.</p>
       </div>
+      <div class="cta-actions"><a class="primary-action" href="projects.html">Explore projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
     </div>
   </section>
 
+  </main>
+
   <footer>
-    <p>Email: <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a> | Phone: 079 428 6590 / 081 606 9979</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/elias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">Profile</a> | GitHub: <a href="https://github.com/BabaKaElijah" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
+    <p>Email: <a href="mailto:tsebeelias@gmail.com">tsebeelias@gmail.com</a> | Phone: <a href="tel:+27816069979">081 606 9979</a> / <a href="tel:+27616011132">061 601 1132</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ellias-elijah-sithole-4850b0139/" target="_blank" rel="noopener noreferrer">Profile</a> | GitHub: <a href="https://github.com/BabaKaElijah" target="_blank" rel="noopener noreferrer">Portfolio</a></p>
     <p>&copy; 2026 Ellias Sithole</p>
   </footer>
 
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
 
-    toggleBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-
-  </script>
+  <script src="site.js"></script>
   <script src="animations.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ const formStatus = document.getElementById('form-status');
 const formFallback = document.getElementById('form-fallback');
 
 const EMAILJS_PUBLIC_KEY = 'pwthnv3Gun6zF86NH';
-const EMAILJS_SERVICE_ID = 'service_0ptc8gw';
+const EMAILJS_SERVICE_ID = 'service_inm2k28';
 const EMAILJS_TEMPLATE_ID = 'template_7tawm8o';
 const CONTACT_EMAIL = 'tsebeelias@gmail.com';
 

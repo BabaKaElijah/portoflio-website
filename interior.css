@@ -206,6 +206,11 @@
 .inner-page .contact-form { padding: clamp(1.5rem, 2.5vw, 2.2rem); }
 .inner-page .form-direct-email { color: #617178; margin: .4rem 0 1.5rem; }
 .inner-page .form-direct-email a { color: #28535e; font-weight: 700; overflow-wrap: anywhere; }
+.inner-page .form-note { min-height: 1.5rem; margin-top: .9rem; color: #566d74; }
+.inner-page .form-note.form-error { color: #9c3f2c; }
+.inner-page .form-note.form-success { color: #376758; font-weight: 700; }
+.inner-page .form-fallback { display: inline-flex; align-items: center; gap: .55rem; margin-top: .75rem; color: #28535e; font-weight: 700; }
+.inner-page .form-fallback[hidden] { display: none; }
 .inner-page .form-field input, .inner-page .form-field textarea { background: #f8faf9; border-color: #dce6e3; }
 .inner-page .form-field input:focus, .inner-page .form-field textarea:focus { border-color: #8bb8a9; box-shadow: 0 0 0 3px rgba(84,142,122,.12); }
 .inner-page .contact-form .btn-send { border: 0; border-radius: .75rem; color: #fff; background: #183e48; box-shadow: 0 14px 30px rgba(24,62,72,.16); font-family: inherit; font-size: .95rem; cursor: pointer; }
